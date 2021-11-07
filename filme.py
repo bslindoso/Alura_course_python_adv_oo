@@ -5,3 +5,5 @@ class Filme(Programa):
         super().__init__(nome, ano)
         self.duracao = duracao
 
+    def __str__(self):
+        return f'{self._nome} - {self.ano} - {self.duracao} minutos : Likes: {self._likes}'
